@@ -35,9 +35,8 @@ public class MatchingAlgorithm {
         }
 
         Collections.sort(otherUsers);
-        LinkedList<Account> potentialMatches = createPotentialMatches(user, otherUsers);
 
-        return potentialMatches;
+        return createPotentialMatches(user, otherUsers);
     }
 
     private static LinkedList<Account> createPotentialMatches(Account user, ArrayList<Account> otherUsers) {
